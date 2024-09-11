@@ -19,7 +19,7 @@ body {
     height: 100vh; /* Full viewport height */
     min-height: 100vh; /* Ensure minimum height covers the viewport */
     min-height: 400px; /* Minimum height to ensure it doesn’t get too small */
-    min-width: 800px; /* Minimum width to ensure it doesn’t get too narrow */
+    /* min-width: 800px; /* Minimum width to ensure it doesn’t get too narrow */
     overflow: hidden; /* Prevent scrollbars */
     box-sizing: border-box; /* Include padding and borders in the width and height */
 }
