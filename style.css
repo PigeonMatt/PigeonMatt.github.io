@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #d7c1b4; /* Background color for the site */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use Flexbox to align the container */
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+}
+
+/* Container to Center Content */
+.container {
+    width: 60%; /* 3/5 of the site width */
+    background-color: #ded0c7; /* Background color of the container */
+    display: flex; /* Flexbox to align sidebar and content side-by-side */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Ensure minimum height covers the viewport */
+    min-height: 400px; /* Minimum height to ensure it doesn’t get too small */
+    min-width: 800px; /* Minimum width to ensure it doesn’t get too narrow */
+    overflow: hidden; /* Prevent scrollbars */
+    box-sizing: border-box; /* Include padding and borders in the width and height */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #6b5258; /* Sidebar color */
+    flex: 1; /* 1 part of the flexbox */
+    padding: 20px; /* Padding inside the sidebar */
+    color: white; /* Text color for the sidebar */
+    box-sizing: border-box; /* Include padding in the width */
+    font-size: clamp(1rem, 2vw + 1rem, 2em); /* Responsive font size for sidebar text */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    overflow: auto; /* Handle overflow in the sidebar */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+    word-wrap: break-word; /* Break long words to fit within the container */
+}
+
+/* Sidebar Image Styles */
+.sidebar img {
+    width: 120px; /* Fixed width for the image */
+    height: 120px; /* Fixed height for the image */
+    border-radius: 50%; /* Makes the image round */
+    transition: all 0.2s ease-in-out;
+    object-fit: cover; /* Ensures the image covers the circular area */
+
+    
+}
+
+.sidebar img:hover {
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    transform: scale(1.2);
+    transform: rotate(720);
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove padding */
+    padding-right: 4em;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px; /* Space between list items */
+}
+
+.sidebar ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: clamp(1rem, 2vw + 1rem, 1.25em); /* Responsive font size for links */
+    overflow-wrap: break-word; /* Ensure long words are wrapped */
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styles */
+.content {
+    flex: 2; /* 2 parts of the flexbox, making it double the size of sidebar */
+    padding: 20px; /* Padding inside the content area */
+    box-sizing: border-box; /* Include padding in the width */
+    overflow: auto; /* Handle overflow in the content area */
+}
+
+/* List Items in Content */
+.content li {
+    font-size: clamp(1rem, 2vw + 1rem, 1.5em); /* Responsive font size for list items */
+    margin-bottom: 10px; /* Space between list items */
+    overflow-wrap: break-word; /* Ensure long words are wrapped */
+}
+
+/* Headers in Content */
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    font-size: clamp(1.5rem, 4vw + 1rem, 2rem); /* Responsive font size for headers */
+    margin-bottom: 20px; /* Space below headers */
+    overflow-wrap: break-word; /* Ensure long words are wrapped */
+}
