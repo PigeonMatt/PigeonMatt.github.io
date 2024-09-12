@@ -29,6 +29,7 @@ body {
     .container {
         min-width: 100vw; /* Set minimum width to 100vw for viewports below 800px */
     }
+}
 
 /* Sidebar Styles */
 .sidebar {
